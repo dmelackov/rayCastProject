@@ -2,8 +2,8 @@
   "FOV": 90,
   "FPS": 30,
   "RESOLUTION": [
-    800,
-    600
+    1280,
+    720
   ],
   "maps": [
     "maps/map1.json",

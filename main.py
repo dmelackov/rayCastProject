@@ -121,7 +121,7 @@ class Pseudo3dRender:
         pygame.font.init()
         self.font1 = pygame.font.SysFont('calibri', 30)
 
-    def keyHander(self):
+    def keyHandler(self):
         keys = pygame.key.get_pressed()
         self.playerObj.speed = Vector2(0, 0)
         if keys[pygame.K_a]:
@@ -165,7 +165,7 @@ class Pseudo3dRender:
     def draw(self):
         # 1 луч равен 1-10 горизонтальных пикселей в зависимости от коэфицента
         # Больше значение - хуже качество, но больше быстродействие
-        schacalCoef = 3
+        schacalCoef = 5
         for i in range(config["RESOLUTION"][0] // schacalCoef):
             iterat = i * schacalCoef
             ang = radians(
@@ -250,7 +250,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    GameRender.keyHander()
+    GameRender.keyHandler()
     GameRender.tick()
     clock.tick(config["FPS"])
     pygame.display.flip()
