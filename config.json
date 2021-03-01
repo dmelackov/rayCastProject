@@ -1,0 +1,12 @@
+{
+  "FOV": 90,
+  "FPS": 30,
+  "RESOLUTION": [
+    800,
+    600
+  ],
+  "maps": [
+    "maps/map1.json",
+    "maps/map2.json"
+  ]
+}
